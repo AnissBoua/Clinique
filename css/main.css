@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fccf03;
+  padding: 0 3em;
+}
+
+.nav_bar_list {
+  display: flex;
+}
+
+.nav_bar_list li {
+  margin: 0 1em;
+}
+
+.nav_bar_button {
+  border: 0;
+  border-radius: 1.5em;
+  cursor: pointer;
+  background-color: #fc8403;
+  padding: 0.5em 1.5em;
+}
+
+.nav_bar_button:hover {
+  color: white;
+  transform: scale(1.05, 1.02);
+  transition: 0.2s;
+}
+/*# sourceMappingURL=main.css.map */
