@@ -1,5 +1,10 @@
 body {
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
+}
+
+button {
+  font-family: 'Quicksand', sans-serif;
 }
 
 a {
@@ -9,6 +14,7 @@ a {
 
 a:hover {
   color: white;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -18,14 +24,32 @@ ul {
 }
 
 .nav_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fccf03;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1DB954;
   padding: 0 3em;
 }
 
+.nav_bar_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav_bar_logo_img {
+  width: 40px;
+}
+
 .nav_bar_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -43,7 +67,73 @@ ul {
 
 .nav_bar_button:hover {
   color: white;
-  transform: scale(1.05, 1.02);
+  -webkit-transform: scale(1.05, 1.02);
+          transform: scale(1.05, 1.02);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.sign_in_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  height: 50em;
+  background-color: white;
+  border-radius: 1em;
+  padding: 0;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.sign_in_container_img {
+  width: 45%;
+  height: 50em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1em 0 0 1em;
+}
+
+.sign_in_container form {
+  display: -ms-grid;
+  display: grid;
+}
+
+.sign_in_container_form {
+  width: 70%;
+  margin: auto;
+  margin-top: 5em;
+}
+
+.sign_in_container_form_email, .sign_in_container_form_pass, .sign_in_container_form_name, .sign_in_container_form_confpass {
+  display: -ms-grid;
+  display: grid;
+  margin: 1em 0 0 0;
+}
+
+.sign_in_container_form_email input, .sign_in_container_form_pass input, .sign_in_container_form_name input, .sign_in_container_form_confpass input {
+  font-family: 'Quicksand', sans-serif;
+  border: 0.1em solid #1DB954;
+  border-radius: 0.5em;
+  padding: 1em 0 1em 0.5em;
+}
+
+.sign_in_container_form_submit {
+  font-family: 'Quicksand', sans-serif;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  border: 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+  color: white;
+  background-color: #1DB954;
+  padding: 1em 3em;
+  margin: 2em 0 0 0;
+}
+
+.sign_in_container_form_submit:hover {
+  background-color: #1fd15e;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 /*# sourceMappingURL=main.css.map */

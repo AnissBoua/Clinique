@@ -1,5 +1,10 @@
 body {
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
+}
+
+button{
+  font-family: 'Quicksand', sans-serif;
 }
 a {
   color: black;
@@ -18,8 +23,14 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fccf03;
+  background-color: #1DB954;
   padding: 0 3em;
+  &_logo{
+    display: flex;
+    &_img{
+      width: 40px;
+    }
+  }
   &_list {
     display: flex;
     li {
@@ -36,6 +47,56 @@ ul {
       color: white;
       transform: scale(1.05, 1.02);
       transition: 0.2s;
+    }
+  }
+}
+
+.sign_in_container{
+  display: flex;
+  width: 70%;
+  height: 50em;
+  background-color: white;
+  border-radius: 1em;
+  padding: 0;
+  margin: auto;
+  margin-top: 2em;
+  &_img{
+    width: 45%;
+    height: 50em;
+    object-fit: cover;
+    border-radius: 1em 0 0 1em;
+  }
+  form{
+    display: grid;
+  }
+  &_form{
+    width: 70%;
+    margin: auto;
+    margin-top: 5em;
+    &_email, &_pass, &_name, &_confpass{
+      display: grid;
+      margin: 1em 0 0 0;
+      input{
+        font-family: 'Quicksand', sans-serif;
+        border: 0.1em solid #1DB954;
+        border-radius: 0.5em;
+        padding: 1em 0 1em 0.5em;
+      }
+    }
+    &_submit{
+      font-family: 'Quicksand', sans-serif;
+      justify-self: end;
+      border: 0;
+      border-radius: 0.5em;
+      cursor: pointer;
+      color: white;
+      background-color: #1DB954;
+      padding: 1em 3em;
+      margin: 2em 0 0 0;
+      &:hover {
+        background-color: #1fd15e;
+        transition: 0.2s;
+      }
     }
   }
 }

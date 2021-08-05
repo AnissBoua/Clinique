@@ -1,6 +1,6 @@
 <?php require './logic/root_url.php'?>
-<?php require './components/head.php'?>
-<?php require './components/header.php'?>
+<?php require './pages/components/head.php'?>
+<?php require './pages/components/header.php'?>
 
 
-<?php require './components/footer.php'?>
+<?php require './pages/components/footer.php'?>
